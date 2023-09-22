@@ -11,16 +11,17 @@ function App() {
     setDisplayText(soundName);
   };
 
-  const handleKeyPress = (e) => {
-    const key = e.key.toUpperCase();
-    const drumPad = document.getElementById(key);
-    if (drumPad) {
-      playSound(key, drumPad.getAttribute("data-sound"));
-    }
-  };
-
   useEffect(() => {
+    const handleKeyPress = (e) => {
+      const key = e.key.toUpperCase();
+      const drumPad = document.getElementById(key);
+      if (drumPad) {
+        playSound(key, drumPad.getAttribute("data-sound"));
+      }
+    };
+
     document.addEventListener("keydown", handleKeyPress);
+
     return () => {
       document.removeEventListener("keydown", handleKeyPress);
     };
