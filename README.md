@@ -1,4 +1,4 @@
-# freeCodeCamp Drum Machine
+# freeCodeCamp Drum Machine App
 
 ## Description
 
