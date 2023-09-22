@@ -1,38 +1,68 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #222 !important;
+}
+
+.container {
+  border: 1px solid rgba(255, 128, 0, 0.703);
+  background-color: rgba(255, 128, 0, 0.703);
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 174, 0, 0.5);
+}
+
+.title-area {
+  margin-top: 30px;
+  margin-bottom: 120px;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 5px;
+  font-size: 4rem;
+}
+
+#drum-machine {
   text-align: center;
+  margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#display {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: "Mooli", sans-serif;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.drum-pads {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+.drum-pad {
+  width: 70px;
+  height: 70px;
+  border: 1px solid rgba(63, 33, 4, 0.889);
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 24px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: "Mooli", sans-serif;
+  background-color: rgba(47, 24, 3, 0.845);
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.drum-pad:hover {
+  background-color: rgba(239, 209, 181, 0.889);
+  color: #000;
 }
