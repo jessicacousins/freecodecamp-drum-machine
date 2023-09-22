@@ -4,6 +4,12 @@
 
 This is a simple React Drum Machine application that allows users to play different drum sounds by clicking on the drum pads or using keyboard shortcuts. Bootstrap is used for styling.
 
+## Deployed on Netlify
+
+```
+https://main--musical-queijadas-8bdc39.netlify.app/
+```
+
 ## Dependencies
 
 - `npm install bootstrap`
